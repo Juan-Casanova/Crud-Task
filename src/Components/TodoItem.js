@@ -5,11 +5,24 @@ const TodoItem = ({task,student, id, isCompleted, handleDelete, handleUpdate}) =
 
     return(
         <div className="containerTask">
-            <p>{task}</p> <p>{student}</p> <p>Tarea: {
-            isCompleted===false?"incompleta":"completa"}</p>
+            <p>Tarea: {task}</p>
+            <br/>
+            <p>Estudiante: {student}</p>
+            <br/> 
+            <p>
+                Tarea: {
+                    isCompleted===false?"incompleta":"completa"
+                }
+            </p>
+
+            <br/>
             
             <button onClick={() => handleDelete(id)}>Delete</button>
-            <button onClick = {() => handleUpdate(id,task,student,isCompleted)}>Tarea Acompletada</button>
+            <button id="botonAcompletar" onClick = {() => handleUpdate(id,task,student,isCompleted)}>
+                {
+                    isCompleted===false?"Se acompleto":"Menti"
+                }
+            </button>
         </div>
     )
 

@@ -88,11 +88,13 @@ const TodoContainer = () => {
     ))
 
     return (
-        <div>
+        <div id="createTodo">
 
             <CreateTodo handleCreate = {handleCreate}/>
             <h5>Task Asignadas</h5>
-            {list}
+            <div id="contenedorTask">
+                {list}
+            </div>
 
         </div>
     )

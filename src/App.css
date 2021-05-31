@@ -1,7 +1,66 @@
-.app {
+.App {
   text-align: center;
+  background-color: black;
+  height: 100vh;
+  color: white;
 }
 
 .containerTask {
   display: flex;
+}
+
+#form {
+  border: solid 5px purple;
+  width: 40%;
+  margin-left: 30%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#createTodo {
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 150px;
+}
+
+.containerTask {
+  width: 20%;
+  flex-wrap: wrap;
+  text-align: center;
+  border: solid 5px purple;
+  border-radius: 10px;
+  margin: 2%;
+}
+
+.containerTask p {
+  margin: 0;
+}
+
+#contenedorTask {
+  display: flex;
+}
+
+button {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: purple;
+  color: white;
+}
+
+#botonForm {
+  margin-left: -5%;
+  width: 25%;
+  background-color: purple;
+  color: white;
+}
+
+.containerTask p {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+#botonAcompletar {
+  margin-bottom: 10px;
 }

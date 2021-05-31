@@ -13,7 +13,7 @@ const CreateTodo = ({handleCreate}) => {
     }
 
     return(
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form id="form" onSubmit={handleSubmit(onSubmit)}>
 
             <div>
                 <label htmlFor='task'>Tarea: </label>
@@ -25,7 +25,7 @@ const CreateTodo = ({handleCreate}) => {
                 <input type='text' id='student' placeholder="Sergio el bailador" {...register('student', {required : true})}/>
             </div>
 
-            <button>Enviar</button>
+            <button id="botonForm">Enviar</button>
 
         </form>
     )
